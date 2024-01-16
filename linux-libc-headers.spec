@@ -22,13 +22,13 @@
 
 
 Name:           linux-libc-headers
-Version:        6.1
+Version:        6.6
 Release:        21
 License:        GPL-2.0
 Summary:        Headers for the C library that describe the kernel/userspace ABI
 Url:            https://www.kernel.org/
 Group:          devel
-Source0:        https://www.kernel.org/pub/linux/kernel/v6.x/linux-6.1.tar.xz
+Source0:        https://www.kernel.org/pub/linux/kernel/v6.x/linux-6.6.tar.xz
 
 BuildRequires: bison
 BuildRequires: flex
@@ -62,11 +62,4 @@ find %{buildroot}/usr/include -name ..install.cmd | xargs rm -f || :
 /usr/include/sound/*
 /usr/include/video/*
 /usr/include/xen/*
-/usr/include/misc/cxl.h
-/usr/include/misc/ocxl.h
-/usr/include/misc/fastrpc.h
-/usr/include/misc/habanalabs.h
-/usr/include/misc/xilinx_sdfec.h
-/usr/include/misc/pvpanic.h
-/usr/include/misc/uacce/hisi_qm.h
-/usr/include/misc/uacce/uacce.h
+/usr/include/misc/*
